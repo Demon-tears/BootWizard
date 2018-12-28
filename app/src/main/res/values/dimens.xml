@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marginSize">16dp</dimen>
+    <dimen name="paddingSize">8dp</dimen>
+    <dimen name="dividerSize">1dp</dimen>
+    <dimen name="titleSize">20sp</dimen>
+    <dimen name="textSize">16sp</dimen>
+    <dimen name="inputSize">14sp</dimen>
+</resources>

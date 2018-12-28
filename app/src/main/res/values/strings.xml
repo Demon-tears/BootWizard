@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Boot Wizard</string>
+    <string name="pre_btn">Previous</string>
+    <string name="next_btn">Next</string>
+</resources>
