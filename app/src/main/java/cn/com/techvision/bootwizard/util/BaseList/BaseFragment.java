@@ -63,6 +63,7 @@ public class BaseFragment extends Fragment implements BaseAdapter.OnItemAdapterC
         recyclerView.setAdapter(baseAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false));
         recyclerView.addItemDecoration(new DividerItemDecoration(getActivity(),DividerItemDecoration.VERTICAL){
+
             @Override
             public void getItemOffsets(Rect outRect, View view, RecyclerView parent, RecyclerView.State state) {
                 super.getItemOffsets(outRect, view, parent, state);
@@ -72,9 +73,11 @@ public class BaseFragment extends Fragment implements BaseAdapter.OnItemAdapterC
 
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity()){
+
             @Override
-            public boolean canScrollVertically() {
-                return false;
+            public int scrollVerticallyBy(int dy, RecyclerView.Recycler recycler, RecyclerView.State state) {
+                return 0;// 禁止滑动
+                //return super.scrollVerticallyBy(dy, recycler, state);
             }
 
             @Override

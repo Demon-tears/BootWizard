@@ -141,7 +141,12 @@ public class WifiSettingActivity extends Activity implements BaseFragment.OnItem
 
     @Override
     public void onItemClick(View view, int position) {
+        connectWifi(position);
         Log.d("lrh","WifiSettingActivity " + position);
+    }
+
+    private void connectWifi(int position) {
+
     }
 
     @Override
